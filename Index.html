@@ -1,0 +1,403 @@
+<html>
+	<head> 
+		<title> Practice </title>
+		<style type='text/css'>
+		*{
+			margin : 0px;
+			font-family:arial;
+		}
+		.space
+		{
+			margin-bottom:50px !important;
+		}
+		#container
+		{
+			width:100%;
+			height:auto;
+			background:#E2E2E2;
+			overflow:hidden;
+			float:left;
+		}
+		#wrapper{
+			width:1000px;
+			height:auto;
+			background:#F1F1F1;
+			margin: 0px auto;
+			overflow:hidden;
+			//border:2px solid red;
+		}
+		#wrapper_resize{
+			width:980px;
+			height:auto;
+			overflow:hidden;
+			margin: 0px auto;
+			
+		}
+		#header{
+			width:980px;
+			height:90px;
+			float:left;
+		}
+		#header_logo{
+			width:300px;
+			height:90px;	
+			float:left;
+			/*background:pink;*/
+		}
+		#header_right{
+			width:680px;
+			height:90px;
+			float:left;
+		}
+		#header_right a
+		{
+			float:right;
+			margin: 20px 130px;			
+			height:25px;
+			width:75px;
+			background:#78BBE6;
+			text-decoration:none;
+			text-align:center;
+			font-family:arial;
+			padding-top:5px;
+			color:white;
+			
+		}
+		#navigator{
+			width:980px;
+			height:90px;
+			float:left;
+		}
+		#menu{
+			width:600px;
+			height:90px;
+			float:right;
+			border-top:1px solid #E2E2E2;
+		}
+		#banner{
+			width:980px;
+			height:300px;
+			float:left;
+			background:pink;
+			border-radius:30px;
+		}
+		#banner img
+		{
+		width:100%;
+		height:100%;
+		
+		}
+		#content{
+			width:980px;
+			height:auto;
+			float:left;
+			
+		}
+		
+		#content_left{
+			width:300px;
+			min-height: 450px;
+			float:left;
+			
+		}
+		#content_left_top
+		{
+			width:300px;
+			height: 80px;
+			float:left;
+			
+		
+		}
+		#content_left_top h2
+		{
+			float:left;
+			margin-top:40px;
+			font-weight:normal;
+			color:#595959;
+		}
+		#content_left_down
+		{
+			width:300px;
+			height:370px;
+			float:left;
+			
+		}
+		#content_left_down ul
+		{
+			float:left;
+			padding:0px;
+			margin-top:20px;
+			width:300px;
+			
+		}
+		#content_left_down ul li
+		{
+			list-style:none;
+			float:left;
+			margin-bottom:10px;
+			height:30px;
+			width:100%;
+		}
+		#content_left_down ul li a
+		{
+			text-decoration:none;
+			color:gray;
+			font-size:12px;
+			width:80%;
+			display:block;
+			height:10px;
+			padding:10px;
+			
+		}
+		#content_left_down ul li a:hover
+		{
+			background:#78BBE6;
+			color:white;
+		}
+		#content_right{
+			width:680px;
+			min-height:450px;
+			float:right;
+			font-weight:normal;
+			background:#F1F1F1;
+		}
+		h1
+		{
+		margin:0px;
+		padding:20px 0px 0px;
+		color:#636363;
+		font-weight:bold;
+		font-family:Arial;
+		}
+		
+		#menu ul
+		{
+			
+			float:left;
+			padding:0px;
+			height:30px;
+			margin-top:20px;
+			
+			
+		}
+		#menu ul li
+		{
+			list-style:none;
+			float:left;
+			margin-left:20px;
+			height:30px;
+		}
+		#menu ul li a
+		{
+			text-decoration:none;
+			display:block;
+			height:20px;
+			padding:5px 20px;
+			float:left;	
+			border-radius:10px;	
+			color:gray;
+		}
+		#menu ul li a:hover
+		{
+			background-color:#78BBE6;
+			color:white;
+			
+		}
+		#content_right img
+		{
+			float:right;
+			width:640;
+			height:193;
+			margin-top:20px;
+			border-color:white;
+		}
+		#content_right h2
+		{
+			margin-top:20px;
+			margin-left:30px;
+		}
+		#content_right p
+		{
+			margin-top:20px;
+			margin-left:30px;
+		}
+		
+		.blueText
+		{
+			color:#78BBE6;
+		}
+		.blog{
+			font-weight:normal;
+			color:#636363;
+		}
+		.date{
+			color:#636363;
+			font-size:12px;
+		}
+		.smallText
+		{
+			font-size:16px;
+			font-weight:normal;
+		}
+		#header_logo h1
+		{
+			font-size:40px;
+			color:gray;
+			font-family:arial;
+		}
+		#comment a
+		{
+			float:right;
+			margin-top:20px;			
+			text-decoration:none;
+			background:#78BBE6;
+			height:28px;
+			width:90px;
+			text-align:center;
+			font-family:arial;
+			padding-top:5px;
+			color:white;
+			font-size:13px;
+		}
+		#read_more a
+		{
+			float:left;
+			margin-top:20px;			
+			text-decoration:none;
+			background:#78BBE6;
+			height:28px;
+			width:90px;
+			text-align:center;
+			font-family:arial;
+			padding-top:5px;
+			color:white;
+			font-size:13px;
+			margin-left:30px
+		}
+		#pagenavi{
+			background:#F1F1F1;
+			width:100%;
+			height:10px;
+			float:left;
+		}
+		.pages{
+			float:left;
+			font-size:12px;
+			color:gray;
+			margin:30px;
+		}
+		.current{
+			float:right;
+			font-size:12px;
+			color:gray;
+			margin:30px;
+			background:#78BBE6;
+			text-align:center;
+			font-family:arial;
+			height:20px;
+			width:20px;
+		}
+		
+		#footer
+		{
+			width:100%;
+			height:50px;
+			float:left;
+			background:#F1F1F1;
+		}
+		#footer_top{
+			width:100%;
+			height:20px;
+			float:left;
+			background-color:#6AADD8;
+		}
+		.mywebsite{
+			margin:20px;
+			color:#636363;
+			font-size:12px;
+			float:left;
+		}
+		.layout{
+			margin:20px;
+			color:#636363;
+			font-size:12px;
+			float:right;
+		}
+		</style>
+	</head>
+	
+	
+	
+	<body>
+		<div id ='container'>
+			<div id='wrapper'>
+				<div id='wrapper_resize'>
+					
+					<div id = 'header'>
+						<div id = 'header_logo'>
+							<h1><span class='blueText'>E</span>Network<span class='smallText'>&nbsp;Site</span></h1>
+						</div>
+						<div id ='header_right'>
+							<a href='#'>login</a>
+						</div>
+					</div>
+				
+					<div id = 'navigator'>
+						<div id = 'menu'>
+						<ul>
+							<li><a href='home.html'>Home</a></li>
+							<li><a href='support.html'>Support</a></li>
+							<li><a href='aboutus.html'>About Us</a></li>
+							<li><a href='blog.html'>Blog</a></li>
+							<li><a href='contactus.html'>Contact Us</a></li>
+						</ul>
+						</div>
+					</div>
+				
+					<div id = 'banner'>
+						<img src='header_images.jpg' alt="no image"/>
+					</div>
+				
+					<div id ='content'>
+						<div id='content_left'>
+							<div id='content_left_top'>
+								<h2>Sponsors</h2>
+							</div>
+							<div id='content_left_down'>
+							<ul>
+								<li><a href='blog.html'>BLOG</a></li>
+								<li><a href='category.html'>CATEGORY</a></li>
+								<li class='space'><a href='comment.html'>COMMENT</a></li>
+								<li><a href='myfriends.html'>MY FRIENDS</a></li>
+							</ul>
+							</div>
+						</div>
+						<div id='content_right'>
+							<h2><span class='blog'>Blog</span></h2>
+							<p><span class ='date'>March 16, 2018 | Posted By <a href = 'owner.html'>Owner</a></span></p>
+							<img src = 'images_1.jpg' alt='No Image' border="4px"/>
+							<div id='Read_more'>
+								<a href="#">Read more</a>
+							</div>
+							<div id='comment'>
+								<a href="#">Comments(3)</a>
+							</div>
+							<div id='pagenavi'>
+								<span class="pages">Page 1 of 2</span>
+								<span class="current">1</span>
+							</div>
+						</div>
+					</div>
+					<div id = 'footer'>
+						<div id='footer_top'>
+						</div>
+						<p><span class ='mywebsite'>MyWebSite.</span></p>
+						<p><span class ='layout'>Layout by Krishan Tuli</span></p>
+					</div>
+					
+				</div>
+					
+			</div>
+		</div>
+	</body>
+</html>
